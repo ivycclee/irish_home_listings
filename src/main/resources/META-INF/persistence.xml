@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>com.model.Agent</class>
+        <class>com.model.GarageType</class>
+        <class>com.model.Property</class>
+        <class>com.model.PropertyType</class>
+        <class>com.model.Style</class>
+        <class>com.model.User</class>
+        <class>com.model.Vendor</class>
+        <class>com.model.Archive</class>
+        <class>com.model.Note</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/irish_home_listings"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="eclipselink.target-database" value="MySQL"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
